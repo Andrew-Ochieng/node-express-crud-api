@@ -1,0 +1,23 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Daniel",
+            "age": 30,
+            "location": "Nairobi"
+        },
+        {
+            "id": 1,
+            "name": "Njoki",
+            "age": 27,
+            "location": "Murang'a"
+        },
+        {
+            "id": 3,
+            "name": "Michelle",
+            "age": 24,
+            "location": "Mombasa"
+        }
+    ]
+}
+
