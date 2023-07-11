@@ -1,0 +1,30 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "title": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "status": "completed"
+        },
+        {
+            "id": 2,
+            "title": "Consectetur adipiscing elit",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "status": "pending"
+        },
+        {
+            "id": 3,
+            "title": "Lorem ipsum dolor consectetur",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "status": "completed"
+        },
+        {
+            "id": 4,
+            "title": "Lorem ipsum adipiscing elit",
+            "description": 24,
+            "status": "completed"
+        }
+    ]
+}
+
+
