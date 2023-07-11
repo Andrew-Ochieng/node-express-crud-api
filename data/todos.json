@@ -21,7 +21,7 @@
         {
             "id": 4,
             "title": "Lorem ipsum adipiscing elit",
-            "description": 24,
+            "description": "dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "status": "completed"
         }
     ]

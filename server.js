@@ -26,14 +26,31 @@ app.post('/todos', (req, res) => {
     const newTodo = {
         id: todos.length + 1,
         title: req.body.title,
-        description: req.body.description
+        description: req.body.description,
+        status: req.body.status
     }
     todos.push(newTodo)
-    res.json(newTodo)
+    res.json(todos)
 })
 
 // put request
-// app.put('/todos/:id')
+app.put('/todos/:id', (req, res) => {
+    const id = Number(req.params.id)
+    const index = todos.findIndex((item) => item.id === id)
+    // console.log(todo)
+    if (index === -1) {
+        res.status(404).json('Todo not found!') 
+    }
+    const updatedTodo = {
+        id: todos[index].id,
+        title: req.body.title,
+        description: req.body.description,
+        status: req.body.status
+    } 
+
+    todos[index] = updatedTodo
+    res.status(201).json('Todo was updated succesfully!')
+})
 
 // delete request
 app.delete('/todos/:id', (req, res) => {
@@ -42,12 +59,6 @@ app.delete('/todos/:id', (req, res) => {
 
     todo === -1 ? res.status(404).send('Todo not found') : res.status(200).json('Todo deleted successfully!')
 })
-
-
-
-
-
-
 
 
 app.listen(8000, () => {
